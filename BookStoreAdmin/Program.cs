@@ -1,7 +1,11 @@
+using BookStoreAdmin.Models.BookStoreDbContext;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<BookStoreDbContext>();
 
 var app = builder.Build();
 
