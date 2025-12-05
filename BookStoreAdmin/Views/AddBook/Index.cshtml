@@ -1,0 +1,16 @@
+﻿
+
+        <div class="content">
+            <div class="card">
+                <h2>➕ افزودن کتاب</h2>
+
+                <form asp-controller="AddBook" asp-action="Index" method="post"  onsubmit="addBook(event)">
+                    <input name="title" type="text" id="title" placeholder="عنوان کتاب" required>
+                    <input name="author" type="text" id="author" placeholder="نویسنده" required>
+                    <input name="subject" type="text" id="subject" placeholder="موضوع" required>
+                    <input name="BookSummery" type="text" id="BookSummery" placeholder="خلاصه کتاب" required>
+                    <button type="submit">ثبت</button>
+                </form>
+            </div>
+        </div>
+

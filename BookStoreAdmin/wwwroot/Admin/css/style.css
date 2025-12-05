@@ -1,0 +1,481 @@
+
+body {
+    margin: 0;
+    font-family: "IRANSans", Arial;
+    direction: rtl;
+    background: #f2f4f7;
+}
+
+/* هدر */
+header {
+    background: linear-gradient(to left, #4a90e2, #007bff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ساختار صفحه */
+.container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* منوی سمت راست */
+.sidebar {
+    width: 220px;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    padding: 20px 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    background: #e9eef5;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+}
+
+.sidebar a:hover {
+    background: #d2deed;
+    font-weight: bold;
+}
+
+/* بخش محتوا */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* فرم ها */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    transition: .3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* جدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f1f1f1;
+}
+body {
+    margin: 0;
+    font-family: "IRANSans", Arial;
+    direction: rtl;
+    background: #f2f4f7;
+}
+
+/* هدر */
+header {
+    background: linear-gradient(to left, #4a90e2, #007bff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ساختار صفحه */
+.container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* منوی سمت راست */
+.sidebar {
+    width: 220px;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    padding: 20px 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    background: #e9eef5;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+}
+
+.sidebar a:hover {
+    background: #d2deed;
+    font-weight: bold;
+}
+
+/* بخش محتوا */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* فرم ها */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    transition: .3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* جدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f1f1f1;
+}
+body {
+    margin: 0;
+    font-family: "IRANSans", Arial;
+    direction: rtl;
+    background: #f2f4f7;
+}
+
+/* هدر */
+header {
+    background: linear-gradient(to left, #4a90e2, #007bff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ساختار صفحه */
+.container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* منوی سمت راست */
+.sidebar {
+    width: 220px;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    padding: 20px 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    background: #e9eef5;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+}
+
+.sidebar a:hover {
+    background: #d2deed;
+    font-weight: bold;
+}
+
+/* بخش محتوا */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* فرم ها */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    transition: .3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* جدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f1f1f1;
+}
+body {
+    margin: 0;
+    font-family: "IRANSans", Arial;
+    direction: rtl;
+    background: #f2f4f7;
+}
+
+/* هدر */
+header {
+    background: linear-gradient(to left, #4a90e2, #007bff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ساختار صفحه */
+.container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* منوی سمت راست */
+.sidebar {
+    width: 220px;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    padding: 20px 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    background: #e9eef5;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+}
+
+.sidebar a:hover {
+    background: #d2deed;
+    font-weight: bold;
+}
+
+/* بخش محتوا */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* فرم ها */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    transition: .3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* جدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f1f1f1;
+}
+body {
+    margin: 0;
+    font-family: "IRANSans", Arial;
+    direction: rtl;
+    background: #f2f4f7;
+}
+
+/* هدر */
+header {
+    background: linear-gradient(to left, #4a90e2, #007bff);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* ساختار صفحه */
+.container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* منوی سمت راست */
+.sidebar {
+    width: 220px;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.1);
+    padding: 20px 10px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    background: #e9eef5;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+    transition: .3s;
+}
+
+.sidebar a:hover {
+    background: #d2deed;
+    font-weight: bold;
+}
+
+/* بخش محتوا */
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* فرم ها */
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    transition: .3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* جدول */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f1f1f1;
+}
