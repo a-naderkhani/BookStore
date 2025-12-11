@@ -1,19 +1,15 @@
 @font-face {
-    font-family: "Yekan";
-    src: url(/Admin/fonts/Yekan.eot); 
-    src: url(/Admin/fonts/Yekan.eot?#iefix) format("embedded-opentype"), 
-    url(/Admin/fonts/Yekan.woff) format("woff"), 
-    url(/Admin/fonts/Yekan.ttf) format("truetype"), 
-    url(/Admin/fonts/Yekan.svg#BYekan) format("svg"); 
+    font-family: 'Yekan';
+    src: url(/Admin/fonts/Yekan.eot); /*اکسپلورر 9 به بعد*/
+    src: url(/Admin/fonts/Yekan.eot?#iefix) format("embedded-opentype"), /*هک اکسپلورر برای نسخه های قدیمی*/
+    url(/Admin/fonts/Yekan.woff) format("woff"), /*مرورگر های جدید*/
+    url(/Admin/fonts/Yekan.ttf) format("truetype"), /*تمام مرورگرها به جزء اکسپلورر*/
+    url(/Admin/fonts/Yekan.svg#BYekan) format("svg"); /*نسخه های قدیمی سیستم عامل iOS*/
     font-weight: normal;
     font-style: normal;
 }
-body {
-    margin: 0;
-    font-family: "Yekan", "IRANSans", Arial;
-    direction: rtl;
-    background: #f2f4f7;
-}
+
+
 
 /* هدر */
 header {
@@ -62,6 +58,7 @@ header {
     padding: 30px;
 }
 
+/* کارت‌ها */
 .card {
     background: white;
     padding: 25px;
@@ -69,13 +66,14 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* فرم ها */
-input, button {
+/* فرم‌ها */
+input, button, select {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
     border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 15px;
 }
 
 button {
@@ -83,14 +81,15 @@ button {
     color: white;
     border: none;
     transition: .3s;
-    font-size:19px;
+    cursor: pointer;
+    font-size: 19px;
 }
 
 button:hover {
     background: #0056b3;
 }
 
-/* جدول */
+/* جدول‌ها */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -100,8 +99,14 @@ table {
 th, td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
+    text-align: center;
 }
 
 th {
     background: #f1f1f1;
 }
+
+/* خط جداکننده */
+hr {
+    border: none;
+    border-top: 1px solid

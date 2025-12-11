@@ -18,7 +18,8 @@ using Microsoft.AspNetCore.Mvc;
         public IActionResult Index()
         {
             List<Book> bk = _bookStoreDbContext.Books.ToList();
-            return View();
+            int count=bk.Count;
+            return View(bk);
         }
     }
 }

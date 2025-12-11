@@ -1,11 +1,33 @@
 ﻿<!DOCTYPE html>
-<html>
+<html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
     <title>کتاب فروشی محله</title>
     <link href="/Admin/css/style.css" rel="stylesheet" type="text/css">
-    <!--<script src="app.js"></script>-->
-</head>
+    @RenderSection("Styles", required: false) 
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css" />
+
+    <!--
+        RTL version
+    -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.rtl.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/default.rtl.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/semantic.rtl.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.rtl.min.css" />
+ </head>
 <body>
 
     <header>کتابخانه محلی آنلاین</header>
@@ -15,9 +37,9 @@
         <div class="sidebar">
             <a asp-controller="home" asp-action="Index">🏠 صفحه اصلی</a>
             <a asp-controller="AddBook" asp-action="Index">➕ افزودن کتاب</a>
-            <a href="delete.html">❌ حذف کتاب</a>
-            <a href="update.html">✏️ ویرایش کتاب</a>
-            <a href="report.html">📘 گزارش گیری</a>
+            <a asp-controller="DeleteBook" asp-action="Index">❌ حذف کتاب</a>
+            <a asp-controller="UpdateBook" asp-action="Index">✏️ ویرایش کتاب</a>
+            <a asp-controller="ReportBook" asp-action="Index">📘 گزارش گیری</a>
         </div>
          <div class="content">
         <div class="card">
@@ -28,26 +50,6 @@
 
 
     </div>
-
-    <!--
-    <script>
-    function addBook(e) {
-        e.preventDefault();
-
-        const book = {
-            id: Date.now().toString(),
-            title: title.value,
-            author: author.value
-        };
-
-        insertBook(book);
-        alert("کتاب اضافه شد!");
-
-        e.target.reset();
-    }
-    </script>
-    -->
-
 </body>
 </html>
 
