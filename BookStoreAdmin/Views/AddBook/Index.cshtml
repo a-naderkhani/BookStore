@@ -1,16 +1,20 @@
-﻿
-
-        <div class="content">
+﻿        <div class="content">
             <div class="card">
                 <h2>➕ افزودن کتاب</h2>
 
-                <form asp-controller="AddBook" asp-action="Index" method="post"  onsubmit="addBook(event)">
+        <form asp-controller="AddBook" asp-action="Index" method="post" onsubmit="addBook()">
                     <input name="title" type="text" id="title" placeholder="عنوان کتاب" required>
                     <input name="author" type="text" id="author" placeholder="نویسنده" required>
                     <input name="subject" type="text" id="subject" placeholder="موضوع" required>
                     <input name="BookSummery" type="text" id="BookSummery" placeholder="خلاصه کتاب" required>
                     <button type="submit">ثبت</button>
-                </form>
+        </form>
             </div>
         </div>
+<script>
+    function addBook() {
 
+        var notification = alertify.notify('کتاب با موفقیت ثبت گردید', 'success', 10, function(){  console.log('dismissed'); });
+
+    };
+</script>

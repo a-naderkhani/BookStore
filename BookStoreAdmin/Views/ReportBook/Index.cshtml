@@ -1,0 +1,83 @@
+﻿@using BookStoreAdmin.Models.Entities.Book
+
+@model List<Book>
+
+ @section Styles {
+    <link href="/Admin/css/StyleReport.css" rel="stylesheet" />
+} 
+
+ <div class="content">
+        <div class="card">
+            <h2>📘 جستجو و گزارش‌گیری</h2>
+
+            <!-- فرم جستجو -->
+            <label>عنوان کتاب:</label>
+            <input type="text" id="searchTitle">
+
+            <label>نویسنده:</label>
+            <input type="text" id="searchAuthor">
+
+            <label>خلاصه:</label>
+            <input type="text" id="searchCategory">
+
+            <label>موضوع:</label>
+            <select id="searchStatus" style="width:100%; padding:12px; border-radius:8px; border:1px solid #ccc; margin:8px 0;">
+                <option value="">همه</option>
+                <option value="available">مذهبی</option>
+                <option value="borrowed">سیاسی</option>
+                <option value="borrowed">علمی</option>
+            </select>
+
+            <button onclick="searchBooks()">🔍 جستجو</button>
+
+            <!-- جدول نتایج -->
+            <table id="resultTable">
+                <thead>
+                    <tr>
+                        <th>عنوان</th>
+                        <th>نویسنده</th>
+                        <th>موضوع</th>
+                        <th>خلاصه</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     @foreach (var item in Model)
+                       {
+                        <tr>
+                            <td>@item.Title</td>
+                            <td>@item.Author</td>
+                            <td>@item.Subject</td>
+                            <td>@item.BookSummery</td>
+                        </tr>
+                       }       
+                </tbody>
+            </table>
+
+            <hr style="margin:25px 0;">
+
+            <!-- گزارش -->
+            <h3>📊 گزارش وضعیت</h3>
+
+            <table>
+                <tr>
+                    <th>نوع گزارش</th>
+                    <th>تعداد</th>
+                </tr>
+                <tr>
+                    <td>تعداد کل کتاب‌ها</td>
+                    <td id="totalBooks">0</td>
+                </tr>
+                <tr>
+                    <td>کتاب‌های موجود</td>
+                    <td id="availableBooks">0</td>
+                </tr>
+                <tr>
+                    <td>کتاب‌های فروخته شده</td>
+                    <td id="borrowedBooks">0</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+

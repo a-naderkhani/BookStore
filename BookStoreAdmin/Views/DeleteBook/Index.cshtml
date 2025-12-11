@@ -1,0 +1,22 @@
+﻿ @section Styles {
+    <link href="/Admin/css/StyleDelete.css" rel="stylesheet" />
+} 
+<div class="content">
+    <h2>حذف کتاب</h2>
+    <p>برای حذف یک کتاب، کد کتاب را وارد کنید.</p>
+    <form asp-controller="DeleteBook" asp-action="Index" method="post" onsubmit="DeleteBook()">
+    <div class="box">
+        <label>کد کتاب:</label>
+        <input name="Id" type="text" placeholder="کد کتاب را وارد کنید">
+        <button>حذف کتاب</button>
+    </form>
+    </div>
+</div>
+<script>
+    function DeleteBook() {
+
+        var notification = alertify.notify('کتاب با موفقیت حذف گردید', 'warning', 10, function(){  console.log('dismissed'); });
+
+    };
+</script>
+
